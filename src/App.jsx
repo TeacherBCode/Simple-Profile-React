@@ -1,4 +1,6 @@
-import curlyMan from './assets/curly-hair-man.png'
+import curlyMan from '/src/assets/curly-hair-man.png'
+import github from '/src/assets/github.png' 
+import linkedin from '/src/assets/linkedin.png'
 import './App.css'
 
 function App() {
@@ -13,8 +15,8 @@ function App() {
         <p>Frontend Developer</p>
         <a>bhuvan.thota3</a>
         <div className='info-btns'>
-          <button className='github btn'><img src="./src/assets/github.png" alt="github icon" className='github-img' />Github</button>
-          <button className='linkedin btn'><img src="./src/assets/linkedin.png" alt="linkedin icon" className='linkedin-img' />LinkedIn</button>
+          <button className='github btn'><img src={github} alt="github icon" className='github-img' />Github</button>
+          <button className='linkedin btn'><img src={linkedin} alt="linkedin icon" className='linkedin-img' />LinkedIn</button>
         </div>
       </div>
 
