@@ -1,34 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import curlyMan from './assets/curly-hair-man.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='profile-card'>
+      <a href="#">
+        <img src={curlyMan} className="logo" alt="Curly Hair Man" />
+      </a>
+      <div className='info'>
+        <h1>Bhuvan Thota</h1>
+        <p>Frontend Developer</p>
+        <a>bhuvan.thota3</a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div className='card'>
+        <div className='about'>
+          <h5>About</h5>
+          <p>I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.</p>
+        </div>
+        <div className='interest'>
+          <h5>Interests</h5>
+          <p>Reader. Internet fanatic. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.</p>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+
+    </div>
   )
 }
 
