@@ -12,6 +12,10 @@ function App() {
         <h1>Bhuvan Thota</h1>
         <p>Frontend Developer</p>
         <a>bhuvan.thota3</a>
+        <div className='info-btns'>
+          <button className='github btn'><img src="./src/assets/github.png" alt="github icon" className='github-img' />Github</button>
+          <button className='linkedin btn'><img src="./src/assets/linkedin.png" alt="linkedin icon" className='linkedin-img' />LinkedIn</button>
+        </div>
       </div>
 
       <div className='card'>
